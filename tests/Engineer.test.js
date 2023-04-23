@@ -3,10 +3,10 @@ const Engineer = require('../lib/engineer.js');
 describe("Engineer", () => {
     describe('ExportAssignment', () => {
         it('should properly export Values to new files', () => {
-            const name = 'Michelle Wetherford';
-            const id = '30205873';
-            const email = 'MWetherford@wetherfordengineering.com';
-            const ghub = 'wetherfordsoftwareanddev';
+            const name = 'Daisy bloom';
+            const id = '465838';
+            const email = 'Daisybloom@imdengineering.com';
+            const ghub = 'bloomingengineer';
             const sampetesttextprediction = (
                 `
     <section class="card card-rounded bg-white">
@@ -18,13 +18,13 @@ describe("Engineer", () => {
     <div class="p-3">
     <blockquote class="blockquote text-center">
       <p class="card-body">
-      Michelle Wetherford
+     Daisy bloom
         <br />
-      30205873
+           465838
       <br />
-     Email: <a href="mailto:MWetherford@wetherfordengineering.com">MWetherford@wetherfordengineering.com</a>
+     Email: <a href="mailto:Daisybloom@imdengineering.com">Daisybloom@imdengineering.com</a>
       <br />
-      Github: <a href="https://www.github.com/wetherfordsoftwareanddev">https://www.github.com/wetherfordsoftwareanddev</a>
+      Github: <a href="https://www.github.com/bloomingengineer">https://www.github.com/bloomingengineer</a>
       </p>
       </blockquote>
     </div>
@@ -32,14 +32,7 @@ describe("Engineer", () => {
     </footer>
   </section>`);
             const engineer = new Engineer(name, id, email, ghub);
-        // if const sampletesttextprediction matches up against the appendeng's output, we know the:
-        // name,
-        // id,
-        // email,
-        // and ghub
-        // values input by the user will successfully be implemented into the HTML file with the supporting HTML script
-        // After performing the `npm test` in the terminal/CLI, jest will perform the test,
-        // if everything is the same in the appendeng() function as is the user input in const engineer and  const sampletesttextprediction, the test will pass
+       
             expect(engineer.appendeng).toBe(sampetesttextprediction);
         });
     });
